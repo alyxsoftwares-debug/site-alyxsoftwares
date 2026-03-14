@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>AlyxSoftwares — Sistemas Inteligentes para Negócios</title>
 <meta name="description" content="Software de gestão para açaíterias e negócios. Cardápio online, PDV, delivery, relatórios. Experimente 7 dias grátis."/>
+<link rel="icon" href="logo-alyx.png" type="image/png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -54,7 +55,7 @@ body::before{
 
 /* ══════════════ NAVBAR ══════════════ */
 nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
+  position:absolute;top:auto;left:0;right:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 5%;
   background:rgba(7,8,13,.7);
@@ -62,7 +63,10 @@ nav{
   border-bottom:1px solid rgba(255,255,255,.05);
   transition:all .3s;
 }
-nav.scrolled{padding:12px 5%;background:rgba(7,8,13,.9)}
+nav.scrolled{
+  position:fixed;top:0;
+  padding:12px 5%;background:rgba(7,8,13,.9);
+}
 .nav-logo{
   font-family:var(--font-display);
   font-size:22px;font-weight:800;
@@ -1019,29 +1023,22 @@ footer{
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px">
       <a href="https://wa.me/5585921480429" target="_blank" style="text-decoration:none">
         <div style="background:var(--c-surface);border:1px solid var(--c-border);border-radius:16px;padding:24px;transition:all .2s;cursor:pointer" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='var(--c-border)'">
-          <div style="font-size:28px;margin-bottom:10px">💬</div>
-          <div style="font-weight:700;font-size:14px">WhatsApp</div>
+          <div style="font-size:28px;margin-bottom:10px;color:#25d366;"><i class="fa-brands fa-whatsapp"></i></div>
+          <div style="font-weight:700;font-size:14px;color:var(--c-text);">WhatsApp</div>
           <div style="font-size:12px;color:var(--c-muted);margin-top:4px">(85) 92148-0429</div>
         </div>
       </a>
       <a href="mailto:contato@alyxsoftwares.com.br" style="text-decoration:none">
         <div style="background:var(--c-surface);border:1px solid var(--c-border);border-radius:16px;padding:24px;transition:all .2s;cursor:pointer" onmouseover="this.style.borderColor='var(--c-purple)'" onmouseout="this.style.borderColor='var(--c-border)'">
-          <div style="font-size:28px;margin-bottom:10px">📧</div>
-          <div style="font-weight:700;font-size:14px">E-mail</div>
-          <div style="font-size:12px;color:var(--c-muted);margin-top:4px">contato@<br>alyxsoftwares.com.br</div>
-        </div>
-      </a>
-      <a href="https://instagram.com/alyxsoftwares" target="_blank" style="text-decoration:none">
-        <div style="background:var(--c-surface);border:1px solid var(--c-border);border-radius:16px;padding:24px;transition:all .2s;cursor:pointer" onmouseover="this.style.borderColor='#e1306c'" onmouseout="this.style.borderColor='var(--c-border)'">
-          <div style="font-size:28px;margin-bottom:10px">📸</div>
-          <div style="font-weight:700;font-size:14px">Instagram</div>
-          <div style="font-size:12px;color:var(--c-muted);margin-top:4px">@alyxsoftwares</div>
+          <div style="font-size:28px;margin-bottom:10px;color:var(--c-purple-light);"><i class="fa-solid fa-envelope"></i></div>
+          <div style="font-weight:700;font-size:14px;color:var(--c-text);">E-mail</div>
+          <div style="font-size:12px;color:var(--c-muted);margin-top:4px">alyxsoftwares@<br>gmail.com</div>
         </div>
       </a>
       <div style="background:var(--c-surface);border:1px solid var(--c-border);border-radius:16px;padding:24px">
-        <div style="font-size:28px;margin-bottom:10px">🕐</div>
-        <div style="font-weight:700;font-size:14px">Atendimento</div>
-        <div style="font-size:12px;color:var(--c-muted);margin-top:4px">Seg–Sex<br>9h às 18h</div>
+        <div style="font-size:28px;margin-bottom:10px;color:var(--c-cyan);"><i class="fa-regular fa-clock"></i></div>
+        <div style="font-weight:700;font-size:14px;color:var(--c-text);">Atendimento</div>
+        <div style="font-size:12px;color:var(--c-muted);margin-top:4px">Seg–Dom<br>8h às 23h</div>
       </div>
     </div>
   </div>
