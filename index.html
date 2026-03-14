@@ -214,33 +214,119 @@ nav.scrolled{
   font-family:'DM Mono','Courier New',monospace;
 }
 .mockup-screen{
-  background:linear-gradient(135deg,#0e1018 0%,#13151e 100%);
-  padding:0;min-height:340px;
-  display:grid;grid-template-columns:220px 1fr;
+  background:#f0eeff;
+  padding:0;min-height:380px;
+  display:grid;grid-template-columns:190px 1fr;
 }
 .mock-sidebar{
-  background:linear-gradient(180deg,#1a0533,#2d0f5e,#1a0533);
-  padding:24px 0;display:flex;flex-direction:column;gap:4px;
+  background:linear-gradient(180deg,#1a0533 0%,#2d0f5e 60%,#1a0533 100%);
+  display:flex;flex-direction:column;height:100%;
 }
+.mock-sidebar-logo{
+  padding:14px 16px 12px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;gap:9px;
+}
+.mock-logo-icon{
+  width:32px;height:32px;border-radius:9px;flex-shrink:0;
+  background:linear-gradient(135deg,#a855f7,#ec4899);
+  display:flex;align-items:center;justify-content:center;font-size:15px;
+}
+.mock-logo-text{color:#fff;font-weight:800;font-size:12px;line-height:1.3}
+.mock-logo-text small{display:block;font-size:9px;opacity:.5;font-weight:400}
+.mock-user{
+  padding:10px 16px 10px;border-bottom:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;gap:9px;
+}
+.mock-avatar{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,#7c3aed,#a855f7);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:800;color:#fff;
+}
+.mock-user-name{color:#fff;font-size:12px;font-weight:700}
+.mock-cargo{display:inline-block;background:rgba(168,85,247,.3);color:#d8b4fe;font-size:9px;font-weight:700;padding:1px 7px;border-radius:99px;margin-top:2px}
+.mock-nav{flex:1;padding:8px 0;overflow:hidden}
 .mock-nav-item{
-  display:flex;align-items:center;gap:10px;
-  padding:10px 20px;font-size:12px;color:rgba(255,255,255,.5);
+  display:flex;align-items:center;gap:9px;
+  padding:9px 16px;font-size:11.5px;color:rgba(255,255,255,.5);
   border-left:3px solid transparent;cursor:default;
 }
-.mock-nav-item.active{color:#fff;background:rgba(168,85,247,.2);border-left-color:#a855f7}
-.mock-nav-item i{font-size:13px;width:16px;text-align:center}
-.mock-content{padding:20px}
-.mock-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
-.mock-card{
-  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
-  border-radius:10px;padding:14px;
+.mock-nav-item.active{color:#fff;background:rgba(168,85,247,.22);border-left-color:#a855f7}
+.mock-nav-item i{font-size:12px;width:14px;text-align:center;flex-shrink:0}
+.mock-sidebar-foot{
+  padding:10px 16px;border-top:1px solid rgba(255,255,255,.08);
 }
-.mock-card-val{font-family:var(--font-display);font-size:20px;font-weight:700;color:#fff}
-.mock-card-lbl{font-size:10px;color:rgba(255,255,255,.4);margin-top:3px}
-.mock-card-icon{font-size:18px;margin-bottom:8px}
-.mock-table{background:rgba(255,255,255,.03);border-radius:8px;overflow:hidden}
-.mock-tr{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.04);font-size:11px}
-.mock-tr:last-child{border-bottom:none}
+.mock-sair{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.45);font-size:11px;font-weight:600;margin-bottom:8px}
+.mock-dev{text-align:center}
+.mock-dev span{display:block;font-size:8px;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.05em}
+.mock-dev strong{font-size:10px;color:rgba(255,255,255,.5);font-weight:800}
+.mock-dev small{display:block;font-size:9px;color:rgba(255,255,255,.3)}
+
+/* Main area */
+.mock-main{display:flex;flex-direction:column;overflow:hidden}
+.mock-topbar{
+  background:#fff;padding:10px 16px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid #ede9fe;flex-shrink:0;
+}
+.mock-topbar-title{font-size:15px;font-weight:800;color:#1e1b4b}
+.mock-topbar-sub{font-size:10px;color:#6b7280;margin-top:1px}
+.mock-topbar-btns{display:flex;align-items:center;gap:6px}
+.mock-btn-balcao{
+  background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;
+  border:none;border-radius:8px;padding:5px 10px;font-size:10px;font-weight:700;
+  display:flex;align-items:center;gap:4px;cursor:default;
+}
+.mock-btn-balcao kbd{font-size:8px;opacity:.65;background:rgba(255,255,255,.25);border-radius:3px;padding:1px 4px}
+.mock-btn-delivery{
+  background:#fffbeb;color:#f59e0b;border:1.5px solid #fef3c7;
+  border-radius:8px;padding:5px 10px;font-size:10px;font-weight:700;
+  display:flex;align-items:center;gap:4px;cursor:default;
+}
+.mock-btn-refresh{
+  width:28px;height:28px;border-radius:7px;border:1.5px solid #ede9fe;
+  background:#fff;display:flex;align-items:center;justify-content:center;
+  color:#7c3aed;font-size:11px;cursor:default;
+}
+.mock-body{
+  flex:1;padding:14px;
+  display:grid;grid-template-columns:1fr 200px;gap:12px;
+  background:#f0eeff;overflow:hidden;
+}
+.mock-card-white{
+  background:#fff;border-radius:10px;
+  border:1.5px solid #f3f4f6;
+  box-shadow:0 2px 10px rgba(109,40,217,.07);
+}
+.mock-card-header{
+  padding:10px 14px;border-bottom:1px solid #f3f4f6;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.mock-card-title{font-weight:800;font-size:11.5px;color:#1e1b4b;display:flex;align-items:center;gap:7px}
+.mock-card-icon-sm{
+  width:24px;height:24px;border-radius:7px;background:#ede9fe;
+  display:flex;align-items:center;justify-content:center;color:#7c3aed;font-size:11px;
+}
+.mock-card-body{padding:10px 14px}
+.mock-search{
+  display:flex;align-items:center;gap:7px;
+  background:#f9fafb;border:1.5px solid #e5e7eb;border-radius:9px;
+  padding:8px 12px;font-size:11px;color:#9ca3af;
+}
+.mock-empty{text-align:center;padding:20px 14px;color:#c4b5fd}
+.mock-empty i{font-size:24px;margin-bottom:6px;display:block}
+.mock-empty p{font-size:10px;color:#9ca3af}
+.mock-badge-count{
+  background:#eff6ff;color:#2563eb;
+  font-size:9px;font-weight:800;padding:2px 8px;border-radius:99px;
+}
+.mock-resumo-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:10px}
+.mock-resumo-card{background:#f9fafb;border-radius:8px;padding:9px 10px}
+.mock-resumo-lbl{font-size:8.5px;font-weight:700;color:#9ca3af;text-transform:uppercase;margin-bottom:3px;display:flex;align-items:center;gap:4px}
+.mock-resumo-val{font-size:14px;font-weight:900;color:#1e1b4b}
+.mock-origem-row{display:flex;justify-content:space-between;font-size:10px;color:#6b7280;padding:3px 0}
+.mock-origem-row strong{color:#1e1b4b}
 .mock-badge{font-size:9px;padding:3px 8px;border-radius:99px;font-weight:700}
 .badge-novo{background:#eff6ff;color:#2563eb}
 .badge-entregue{background:#f0fdf4;color:#16a34a}
@@ -248,7 +334,7 @@ nav.scrolled{
 @media(max-width:600px){
   .mockup-screen{grid-template-columns:1fr}
   .mock-sidebar{display:none}
-  .mock-cards{grid-template-columns:repeat(2,1fr)}
+  .mock-body{grid-template-columns:1fr}
 }
 
 /* ══════════════ SECTION BASE ══════════════ */
@@ -675,47 +761,186 @@ footer{
         <div class="mockup-url">painel.alyxsoftwares.vercel.app</div>
       </div>
       <div class="mockup-screen">
+
+        <!-- SIDEBAR IGUAL AO REAL -->
         <div class="mock-sidebar">
-          <div style="padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:8px">
-            <div style="font-size:18px;margin-bottom:4px">🍇</div>
-            <div style="font-size:13px;font-weight:800;color:#fff">Açaí do João</div>
-            <div style="font-size:10px;color:rgba(255,255,255,.4)">Painel de Controle</div>
+          <div class="mock-sidebar-logo">
+            <div class="mock-logo-icon">🍇</div>
+            <div class="mock-logo-text">Açaí do João<small>Painel de Controle</small></div>
           </div>
-          <div class="mock-nav-item active"><i class="fa-solid fa-chart-line"></i><span>Pedidos do Dia</span></div>
-          <div class="mock-nav-item"><i class="fa-solid fa-motorcycle"></i><span>Delivery</span></div>
-          <div class="mock-nav-item"><i class="fa-solid fa-cash-register"></i><span>PDV Balcão</span></div>
-          <div class="mock-nav-item"><i class="fa-solid fa-chart-bar"></i><span>Relatórios</span></div>
-          <div class="mock-nav-item"><i class="fa-solid fa-bowl-food"></i><span>Monte o Açaí</span></div>
-          <div class="mock-nav-item"><i class="fa-solid fa-gear"></i><span>Configurações</span></div>
-        </div>
-        <div class="mock-content">
-          <div style="font-size:11px;color:rgba(255,255,255,.4);margin-bottom:12px">Sexta-feira, 14 de Março</div>
-          <div class="mock-cards">
-            <div class="mock-card">
-              <div class="mock-card-icon" style="color:#a78bfa">💰</div>
-              <div class="mock-card-val">R$847</div>
-              <div class="mock-card-lbl">Vendas hoje</div>
-            </div>
-            <div class="mock-card">
-              <div class="mock-card-icon" style="color:#34d399">📦</div>
-              <div class="mock-card-val">23</div>
-              <div class="mock-card-lbl">Pedidos</div>
-            </div>
-            <div class="mock-card">
-              <div class="mock-card-icon" style="color:#fb923c">🛵</div>
-              <div class="mock-card-val">4</div>
-              <div class="mock-card-lbl">Em delivery</div>
+          <div class="mock-user">
+            <div class="mock-avatar">A</div>
+            <div>
+              <div class="mock-user-name">Alysson</div>
+              <span class="mock-cargo">Dono</span>
             </div>
           </div>
-          <div class="mock-table">
-            <div class="mock-tr" style="background:rgba(255,255,255,.04);font-weight:700;font-size:10px;color:rgba(255,255,255,.4)">
-              <span style="flex:1">Pedido</span><span style="flex:2">Cliente</span><span>Status</span><span style="margin-left:auto">Total</span>
+          <div class="mock-nav">
+            <div class="mock-nav-item active"><i class="fa-solid fa-cash-register"></i><span>PDV &amp; Pedidos</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-motorcycle"></i><span>Delivery</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-store"></i><span>Retirada</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-chart-bar"></i><span>Relatórios</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-burger"></i><span>Itens Fixos</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-ice-cream"></i><span>Monte Açaí</span></div>
+            <div class="mock-nav-item"><i class="fa-solid fa-gear"></i><span>Configurações</span></div>
+          </div>
+          <div class="mock-sidebar-foot">
+            <div class="mock-sair"><i class="fa-solid fa-right-from-bracket"></i> Sair</div>
+            <div class="mock-dev">
+              <span>Desenvolvido por</span>
+              <strong>AlyxSoftwares</strong>
+              <small>(85) 92148-0429</small>
             </div>
-            <div class="mock-tr"><span style="flex:1;font-size:10px;color:rgba(255,255,255,.3)">#0047</span><span style="flex:2">Maria S.</span><span><span class="mock-badge badge-novo">Novo</span></span><span style="margin-left:auto;font-weight:700">R$38</span></div>
-            <div class="mock-tr"><span style="flex:1;font-size:10px;color:rgba(255,255,255,.3)">#0046</span><span style="flex:2">Carlos M.</span><span><span class="mock-badge badge-prep">Prep.</span></span><span style="margin-left:auto;font-weight:700">R$52</span></div>
-            <div class="mock-tr"><span style="flex:1;font-size:10px;color:rgba(255,255,255,.3)">#0045</span><span style="flex:2">Ana P.</span><span><span class="mock-badge badge-entregue">Entregue</span></span><span style="margin-left:auto;font-weight:700">R$29</span></div>
           </div>
         </div>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="mock-main">
+          <!-- Top Bar -->
+          <div class="mock-topbar">
+            <div>
+              <div class="mock-topbar-title">PDV &amp; Pedidos</div>
+              <div class="mock-topbar-sub">Ponto de venda e pedidos do dia</div>
+            </div>
+            <div class="mock-topbar-btns">
+              <div class="mock-btn-balcao"><i class="fa-solid fa-cash-register"></i> Balcão <kbd>F2</kbd></div>
+              <div class="mock-btn-delivery"><i class="fa-solid fa-motorcycle"></i> Delivery <kbd style="font-size:8px;opacity:.65;background:rgba(255,255,255,.25);border-radius:3px;padding:1px 4px">F3</kbd></div>
+              <div class="mock-btn-refresh"><i class="fa-solid fa-rotate-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Grid principal -->
+          <div class="mock-body">
+            <!-- Coluna esquerda -->
+            <div style="display:flex;flex-direction:column;gap:10px">
+
+              <!-- Card Buscar Pedido -->
+              <div class="mock-card-white">
+                <div class="mock-card-header">
+                  <div class="mock-card-title">
+                    <div class="mock-card-icon-sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    Buscar Pedido
+                  </div>
+                </div>
+                <div class="mock-card-body">
+                  <div class="mock-search">
+                    <i class="fa-solid fa-magnifying-glass" style="color:#c4b5fd"></i>
+                    Pesquisar por ID, cliente ou produto...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Pedidos de Hoje -->
+              <div class="mock-card-white" style="flex:1">
+                <div class="mock-card-header">
+                  <div class="mock-card-title">
+                    <div class="mock-card-icon-sm"><i class="fa-solid fa-list"></i></div>
+                    Pedidos de Hoje
+                  </div>
+                  <span class="mock-badge-count">3</span>
+                </div>
+                <div class="mock-card-body" style="padding:0">
+                  <!-- Linha pedido 1 -->
+                  <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid #f3f4f6;font-size:11px">
+                    <div>
+                      <div style="font-size:9px;color:#9ca3af;font-weight:700">#0047 · ONLINE</div>
+                      <div style="font-weight:700;color:#1e1b4b">Maria S.</div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <span class="mock-badge badge-novo">Novo</span>
+                      <span style="font-weight:800;color:#7c3aed">R$38</span>
+                    </div>
+                  </div>
+                  <!-- Linha pedido 2 -->
+                  <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid #f3f4f6;font-size:11px">
+                    <div>
+                      <div style="font-size:9px;color:#9ca3af;font-weight:700">#0046 · DELIVERY</div>
+                      <div style="font-weight:700;color:#1e1b4b">Carlos M.</div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <span class="mock-badge badge-prep">Prep.</span>
+                      <span style="font-weight:800;color:#7c3aed">R$52</span>
+                    </div>
+                  </div>
+                  <!-- Linha pedido 3 -->
+                  <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 14px;font-size:11px">
+                    <div>
+                      <div style="font-size:9px;color:#9ca3af;font-weight:700">#0045 · BALCAO</div>
+                      <div style="font-weight:700;color:#1e1b4b">Ana P.</div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:8px">
+                      <span class="mock-badge badge-entregue">Entregue</span>
+                      <span style="font-weight:800;color:#7c3aed">R$29</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna direita -->
+            <div style="display:flex;flex-direction:column;gap:10px">
+
+              <!-- Card Resumo do Dia -->
+              <div class="mock-card-white">
+                <div class="mock-card-header">
+                  <div class="mock-card-title">
+                    <div class="mock-card-icon-sm"><i class="fa-solid fa-chart-pie"></i></div>
+                    Resumo do Dia
+                  </div>
+                </div>
+                <div class="mock-card-body">
+                  <div class="mock-resumo-grid">
+                    <div class="mock-resumo-card">
+                      <div class="mock-resumo-lbl" style="color:#16a34a"><i class="fa-solid fa-money-bill-wave"></i>TOTAL</div>
+                      <div class="mock-resumo-val">R$ 847</div>
+                    </div>
+                    <div class="mock-resumo-card">
+                      <div class="mock-resumo-lbl" style="color:#7c3aed"><i class="fa-solid fa-receipt"></i>PEDIDOS</div>
+                      <div class="mock-resumo-val">23 total</div>
+                    </div>
+                    <div class="mock-resumo-card">
+                      <div class="mock-resumo-lbl" style="color:#ea580c"><i class="fa-solid fa-tag"></i>DESCONTOS</div>
+                      <div class="mock-resumo-val">R$ 12</div>
+                    </div>
+                    <div class="mock-resumo-card">
+                      <div class="mock-resumo-lbl" style="color:#2563eb"><i class="fa-solid fa-clock"></i>EM ABERTO</div>
+                      <div class="mock-resumo-val">4 pedidos</div>
+                    </div>
+                  </div>
+                  <div style="border-top:1px solid #f3f4f6;padding-top:8px">
+                    <div class="mock-origem-row"><span>Balcão</span><strong>8</strong></div>
+                    <div class="mock-origem-row"><span>Delivery</span><strong>9</strong></div>
+                    <div class="mock-origem-row"><span>Online</span><strong>6</strong></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Pedidos Online -->
+              <div class="mock-card-white" style="flex:1">
+                <div class="mock-card-header">
+                  <div class="mock-card-title">
+                    <div class="mock-card-icon-sm"><i class="fa-solid fa-satellite-dish"></i></div>
+                    Pedidos Online
+                  </div>
+                </div>
+                <div class="mock-card-body">
+                  <div style="display:flex;align-items:center;justify-content:space-between;font-size:10px;margin-bottom:7px">
+                    <div>
+                      <div style="font-size:9px;color:#9ca3af;font-weight:700">#0047</div>
+                      <div style="font-weight:700;color:#1e1b4b;font-size:11px">Maria S.</div>
+                    </div>
+                    <span class="mock-badge badge-novo">Novo</span>
+                  </div>
+                  <div style="text-align:center;padding:10px 0;color:#c4b5fd">
+                    <i class="fa-solid fa-globe" style="font-size:18px;display:block;margin-bottom:4px"></i>
+                    <span style="font-size:9px;color:#9ca3af">+ 5 pedidos hoje</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
